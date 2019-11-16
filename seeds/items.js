@@ -54,7 +54,7 @@ exports.seed = (knex, Promise) => {
           image_path: 'image7'
         },
         { id: 8,
-          cat_id: 4,
+          cat_id: 3,
           title: 'Cat fount',
           description: 'Almost new. Just opened to show to my cat but she thinks she is a dog',
           email: 'catlady@email.com',

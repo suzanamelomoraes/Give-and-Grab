@@ -14,6 +14,17 @@ router.get('/categories', (req, res) => {
   }
 })
 
-router.getItems()
+router.get('/items/:id', (req, res) => {
+  const id = Number(req.params.id)
+
+  db.getItemsById(id)
+    .then(displayItems)
+    .catch(err => res.status(500).send(err.message))
+
+  function displayItems (items) {
+    console.log(items)
+    res.json(items)
+  }
+})
 
 module.exports = router

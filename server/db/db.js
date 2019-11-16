@@ -3,7 +3,8 @@ const config = require('../../knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getCategories
+  getCategories,
+  getItemsById
 }
 
 function getCategories (db = connection) {
@@ -13,6 +14,7 @@ function getCategories (db = connection) {
 
 function getItemsById (id, db = connection) {
   return db('items')
-    .where(cat_id, id)
+    .where('cat_id', id)
     .select('title', 'description', 'email', 'image_path')
+    
 }
