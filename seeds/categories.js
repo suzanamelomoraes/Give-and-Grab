@@ -7,7 +7,7 @@ exports.seed = (knex, Promise) => {
         { id: 1, name: 'clothes' },
         { id: 2, name: 'eletronics' },
         { id: 3, name: 'home' },
-        { id: 3, name: 'other' }
+        { id: 4, name: 'other' }
       ])
     })
 };
