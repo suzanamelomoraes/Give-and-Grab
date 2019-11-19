@@ -7,7 +7,7 @@ module.exports = {
   getItemsById,
   addNewItem,
   deleteItem
-  //updateItem
+  // updateItem
 };
 
 function getCategories(db = connection) {
@@ -36,13 +36,13 @@ function deleteItem(id, db = connection) {
     .del();
 }
 
-// function updateItem ({ id, name, description, email, image }, db = connection) {
-//   return db('items')
-//     .where('items.id', id)
+// function updateItem({ id, name, description, email, image }, db = connection) {
+//   return db("items")
+//     .where("items.id", id)
 //     .update({
 //       title: name,
 //       description,
 //       email,
 //       image_path: image
-//     })
+//     });
 // }

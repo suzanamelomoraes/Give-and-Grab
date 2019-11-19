@@ -41,7 +41,6 @@ router.post("/newItem/:id", (req, res) => {
 
 router.delete("/delete", (req, res) => {
   const id = req.body.id;
-
   db.deleteItem(id)
     .then(displayItems)
     .catch(err => res.status(500).send(err.message));
@@ -51,16 +50,17 @@ router.delete("/delete", (req, res) => {
   }
 });
 
-// router.put('/updateItem/:id', (req, res) => {
-//   const { id, name, description, email, image } = req.body
+// router.put("/updateItem", (req, res) => {
+//   const { id, name, description, email, image } = req.body;
+//   console.log(id);
 
 //   db.updateItem({ id, name, description, email, image })
 //     .then(displayItems)
-//     .catch(err => res.status(500).send(err.message))
+//     .catch(err => res.status(500).send(err.message));
 
-//   function displayItems (items) {
-//     res.json(items)
+//   function displayItems(items) {
+//     res.json(items);
 //   }
-// })
+// });
 
 module.exports = router;
