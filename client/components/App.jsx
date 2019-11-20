@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from './Header'
+import Categories from './Categories'
 
 const App = () => {
   return (
-    <h1>Give and Grab</h1>
+    <>
+    <Header/>
+    <Categories/>
+    </>
   )
 }
 
