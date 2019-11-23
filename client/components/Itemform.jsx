@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 class Itemform extends Component {
   state = {
@@ -7,13 +7,14 @@ class Itemform extends Component {
     description: ""
   };
 
-  onChange(e) {
+  onChanged(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
     return (
       <div>
+        <h1>Add an item to be donated:</h1>
         <form>
           <div>
             <label>Name:</label>
@@ -21,7 +22,7 @@ class Itemform extends Component {
             <input
               type="text"
               name="title"
-              onChange={this.onChange}
+              onChange={this.onChanged}
               value={this.state.title}
             />
           </div>
