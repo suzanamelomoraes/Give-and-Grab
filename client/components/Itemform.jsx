@@ -1,13 +1,13 @@
 import React from "react";
 
-class Itemform extends Component {
+class Itemform extends React.Component {
   state = {
     title: "",
     email: "",
     description: ""
   };
 
-  onChanged(e) {
+  onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
@@ -22,7 +22,7 @@ class Itemform extends Component {
             <input
               type="text"
               name="title"
-              onChange={this.onChanged}
+              onChange={this.onChange}
               value={this.state.title}
             />
           </div>

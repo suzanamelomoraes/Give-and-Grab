@@ -15,28 +15,23 @@ class Items extends React.Component {
 
   render() {
     return (
-      <>
-        <ul>
-          {this.state.itemsState.map(item => {
-            return (
-              <li key={item.id}>
-                {" "}
-                {item.title} <br />
-                {item.description} <br />
-                {item.email} <br />
-                <img
-                  height="250"
-                  width="250"
-                  src={`/images/${item.image_path}.jpg`}
-                />{" "}
-              </li>
-            );
-          })}
-        </ul>
-        <div>
-          <Itemform />
-        </div>
-      </>
+      <ul>
+        {this.state.itemsState.map(item => {
+          return (
+            <li key={item.id}>
+              {" "}
+              {item.title} <br />
+              {item.description} <br />
+              {item.email} <br />
+              <img
+                height="250"
+                width="250"
+                src={`/images/${item.image_path}.jpg`}
+              />{" "}
+            </li>
+          );
+        })}
+      </ul>
     );
   }
 }
