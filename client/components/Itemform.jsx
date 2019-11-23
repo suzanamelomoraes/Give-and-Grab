@@ -11,11 +11,21 @@ class Itemform extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
+  onSubmit(e) {
+    e.preventDefault();
+
+    const newItem = {
+      title: this.state.title,
+      email: this.state.email,
+      description: this.state.description
+    };
+  }
+
   render() {
     return (
       <div>
         <h1>Add an item to be donated:</h1>
-        <form>
+        <form onSubmit={this.onSubmit}>
           <div>
             <label>Name:</label>
             <br />
