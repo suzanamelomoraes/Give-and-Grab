@@ -1,19 +1,24 @@
 Give & Grab
 
+*in progress
 
-A personal project in progress which to built a web application for donations purpose.
+A personal project which the goal is to build a web application for donation purpose.
 
 
-MVP (Minimun Vaiable Project)
+MVP (Minimum Viable Project)
 
-The users will have access a list of items to be donated by users displayed by categories: Clothes, Electronics, Home ans Other.
+The user can access a list of items that has been made available as donation by others users. The items have been displayed and can be accessed by categories: Clothes, Electronics, Home and Other.
 
-To donate the user can fill full a form with the name, description, email contact and photo of the item to be donated.
+
+Next steps
+
+The user can made items available for donation after fill full a form with her/his/they name, description, email contact and photo of the item to be donated.
 
 The application also includes options to add, edit and delete items.
 
 
-Stretch
+
+Stretches
 
 Include high and more complete number of categories and sub-categories
 
@@ -22,4 +27,4 @@ An internal message service to replace email contact
 
 Technologies
 
-HTML, CSS, Javascript, React, APIs
+React, Redux, Node.js, Jest, SQLite3, Express, Knex, Superagent
