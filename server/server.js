@@ -1,14 +1,15 @@
-const path = require('path')
-const express = require('express')
+const path = require("path");
+const express = require("express");
 
-const router = require('./routes/routes')
+const categories = require("./routes/categories");
+const items = require("./routes/categories");
 
-const server = express()
+const server = express();
 
-server.use(express.json())
-server.use(express.static(path.join(__dirname, './public')))
+server.use(express.json());
+server.use(express.static(path.join(__dirname, "./public")));
 
-server.use('/v1', router)
+server.use("/api/v1", categories);
+server.use("/api/v1", items);
 
-
-module.exports = server
+module.exports = server;
