@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 
 const categories = require("./routes/categories");
-const items = require("./routes/categories");
+const items = require("./routes/items");
 
 const server = express();
 
