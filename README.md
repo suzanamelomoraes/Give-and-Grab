@@ -25,10 +25,11 @@ An internal message service to replace the necessity for the user to share email
 ### Technologies:
 
 - React
-- Redux
+- Redux (Stretches)
 - Node.js
 - Jest
 - SQLite3
 - Express
 - Knex
 - Superagent
+- Material UI
