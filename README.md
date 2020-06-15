@@ -24,4 +24,11 @@ An internal message service to replace the necessity for the user to share email
 
 ### Technologies:
 
-React, Redux, Node.js, Jest, SQLite3, Express, Knex, Superagent
+- React
+- Redux
+- Node.js
+- Jest
+- SQLite3
+- Express
+- Knex
+- Superagent
