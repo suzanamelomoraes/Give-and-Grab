@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
 
 const Header = () => {
   return (
-    <h1>Give & Grab</h1>
-  )
-}
+    <AppBar position='static'>
+      <Toolbar>
+        <Typography>Give & Grab</Typography>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
-export default Header
+export default Header;
